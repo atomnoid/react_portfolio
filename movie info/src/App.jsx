@@ -1,13 +1,22 @@
-
-import './App.css'
+import "./App.css";
 
 // This is a component
 function App() {
   return (
-    <div> 
-      <p>hello world!</p>
+    <>
+      <Text display="hello"/>
+      <Text display="never mind"/>
+      <Text display="okay"/>
+
+    </>
+  );
+}
+function Text({display}) {
+  return (
+    <div>
+      <p>{display}</p>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
